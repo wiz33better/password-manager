@@ -11,6 +11,15 @@ def init_db():
     
         """
     )
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS entries (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        app TEXT,
+        username TEXT,
+        password BLOB
+        );
+        """
+    )
     conn.commit()
     conn.close()
 
