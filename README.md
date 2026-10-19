@@ -97,7 +97,6 @@ I'd rather be upfront about the limits:
 - **Single user.** There's one master password per vault and no accounts.
 - **No way to change the master password yet.** Changing it would mean re-encrypting every saved entry with a new key.
 - **Your master password is the only way in.** If you forget it, the data can't be recovered. That's by design.
-- **Keep `vault.db` safe.** Back it up if you care about what's in it, and don't commit it to GitHub. Add `*.db` to your `.gitignore`.
 - **The generator length is fixed at 10 characters.**
 
 ## Ideas for later
