@@ -44,8 +44,6 @@ password-manager/
 └── README.md
 ```
 
-I tried to keep each file doing one job. `database.py` never touches encryption, and `crypto.py` never touches the database. `main.py` is the only place where they meet: it encrypts before saving and decrypts after reading.
-
 ## Getting started
 
 You'll need Python 3 and two packages:
